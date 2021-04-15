@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args) {
+        int n;
+        double avg,sum =0.0;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        int[] num = new int[n];
+        for(int i=0; i<n;i++){
+           num[i]=sc.nextInt();
+           sum+=num[i];
+        }
+        avg=sum/n;
+        System.out.printf("%.12f\n", avg);
+    }
+}

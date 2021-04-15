@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args){
+        int k,t,h;
+        Scanner sc=new Scanner(System.in);
+        k=sc.nextInt();
+        t=k/5;
+        h=k-t*5;
+        if(h==0){
+            System.out.println(t);
+        }else{
+            t=t+1;
+            System.out.println(t);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+
+import java.util.Scanner;
+
+public class Practice {
+    public static void main(String[] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        if (n%2==0){
+            System.out.printf("8 %d", n-8);
+        }else System.out.printf("9 %d", n-9);
+    }
+}

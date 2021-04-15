@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.next();
+        String s2 = sc.next();
+        StringBuffer s3 = new StringBuffer(s1);
+        if (s2.equals(s3.reverse().toString())) {
+            System.out.println("YES");
+        }else System.out.println("NO");
+    }
+}

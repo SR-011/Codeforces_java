@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args){
+        int k,n,w,sum=0;
+        Scanner sc=new Scanner(System.in);
+        k=sc.nextInt();
+        n=sc.nextInt();
+        w=sc.nextInt();
+        for(int i=k;i<=w*k;i+=k){
+            sum+=i;
+        }
+        sum=sum-n;
+        if(sum<=0){
+            sum=0;
+        }
+        System.out.println(sum);
+    }
+}

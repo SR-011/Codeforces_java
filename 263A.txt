@@ -1,0 +1,25 @@
+import java.util.Locale;
+import java.lang.Math;
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        int [][] arr=new int[5][5];
+        int a, b, move;
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 5; i++){
+            for(int j = 0; j < 5; j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 5; i++){
+            for(int j = 0; j < 5; j++){
+               if (arr[i][j]==1){
+                   a=i+1;
+                   b=j+1;
+                   move = Math.abs(a-3)+Math.abs(b-3);
+                   System.out.println(move);
+               }
+            }
+        }
+    }
+}

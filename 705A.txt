@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            if (i == n && i % 2 == 0) {
+                System.out.println("I love it");
+            }
+        else if (i == n && i % 2 != 0) {
+                System.out.println("I hate it");
+            }
+        else if (i != n && i % 2 != 0) {
+            System.out.print("I hate that ");
+        }
+
+        else if (i != n && i % 2 == 0) {
+            System.out.print("I love that ");
+        }
+    }
+
+    }
+}

@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class Practice {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        int count=0,n;
+        int l=str.length();
+        for(int i=0;i<l-1;i++){
+            for(int j=i+1;j<l-1;j++) {
+                if (str.charAt(i) == str.charAt(j)) {
+                    count++;
+                }
+            }
+        }
+        //n=l-count;
+        System.out.println(count);
+       /* if(n%2==0){
+            System.out.println("CHAT WITH HER!");
+        }else System.out.println("IGNORE HIM!");*/
+    }
+}

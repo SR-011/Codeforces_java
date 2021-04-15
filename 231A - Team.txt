@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Team {
+    public static void main(String[] args){
+        int T,n,count,item=0;
+        Scanner sc= new Scanner(System.in);
+        T=sc.nextInt();
+        for(int i=0; i<T; i++){
+            count=0;
+            for(int j=0;j<3;j++) {
+                n = sc.nextInt();
+                if (n == 1) {
+                    count++;
+                }
+            }
+            if(count>=2) {
+                item++;
+            }
+        }
+        System.out.println(item);
+    }
+}

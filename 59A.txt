@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        String p;
+        int c1=0, c2=0;
+        Scanner sc = new Scanner(System.in);
+        p = sc.next();
+        for(int i=0; i<p.length();i++){
+            if (p.charAt(i)>=65 && p.charAt(i)<=90) {
+                c1++;
+            }else if (p.charAt(i)>=97 && p.charAt(i)<=122) {
+                c2++;
+            }
+        }
+        if(c1>c2){
+            System.out.println(p.toUpperCase());
+            }
+        else System.out.println(p.toLowerCase());
+
+    }
+}
