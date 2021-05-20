@@ -1,0 +1,16 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class codeforces{
+    public static void main( String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int l = s.length();
+        s = s.toLowerCase(Locale.ROOT);
+        for (int i=0; i<l; i++){
+            if(s.charAt(i)=='a'||s.charAt(i)=='o'||s.charAt(i)=='y'||s.charAt(i)=='u'||s.charAt(i)=='e'||s.charAt(i)=='i'){
+                continue;
+            }else
+            System.out.print("."+s.charAt(i));
+        }
+    }
+}

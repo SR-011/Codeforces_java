@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ 
+public class cd {
+    public static void main(String[] args){
+        int n, sum=0, tsum=0, fsum=0, count=1, max,k;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+            tsum += arr[i];
+        }
+        for (int i = 0; i < n-1; i++) {
+            if(arr[i] < arr[i+1]){
+                k = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = k;
+                i = -1;
+            }
+        }
+        for(int i=0;i<n;i++){
+            sum += arr[i];
+            fsum = tsum-sum;
+            if(sum<=fsum){
+                count++;
+            }else break;
+        }
+        System.out.println(count);
+    }
+}
