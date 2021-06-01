@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class cd {
+    public static void main(String[] args) {
+        int t,x,y,n;
+        Scanner sc = new Scanner(System.in);
+        t = sc.nextInt();
+        for (int j=0;j<t;j++) {
+            int ans=0,s=0;
+            x = sc.nextInt();
+            y = sc.nextInt();
+            n = sc.nextInt();
+            s =n%x;
+            if(s==y){
+                ans = n;
+                System.out.println(ans);
+            }
+            else if (s>y){
+                ans = n-(s-y);
+                System.out.println(ans);
+            }
+            else if (s<y){
+                ans = n-(s+x-y);
+                System.out.println(ans);
+                }
+        }
+    }
+}

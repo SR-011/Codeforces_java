@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class cd {
+    public static void main(String[] args) {
+        long t;
+        Scanner sc = new Scanner(System.in);
+        t = sc.nextInt();
+        for (long i=0;i<t;i++){
+            long count = 0;
+            long min1=1000000001, min2=1000000001;
+           int n = sc.nextInt();
+           int[]a1 = new int[n];
+           int[]a2 = new int[n];
+           for(int j=0;j<n;j++){
+               a1[j] = sc.nextInt();
+           }
+
+            for(int j=0;j<n;j++){
+                a2[j] = sc.nextInt();
+            }
+           for (int j=0;j<n;j++){
+               if(a1[j]<min1){
+                   min1 = a1[j];
+               }
+           }
+            for (int j=0;j<n;j++){
+                if(a2[j]<min2){
+                    min2 = a2[j];
+                }
+            }
+            for(int j=0;j<n;j++){
+                long diff1, diff2;
+              diff1 =  a1[j] - min1;
+              diff2 =  a2[j] - min2;
+              if(diff1>diff2){
+                  count = count+diff1;
+              }else count = count+diff2;
+            }
+            System.out.println(count);
+        }
+    }
+}
