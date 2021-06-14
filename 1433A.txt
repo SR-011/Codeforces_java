@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+public class codeforces {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int i=0;i<t;i++){
+            int ans = 0;
+            String ss;
+            String s = sc.next();
+            int l = s.length();
+            int x = Integer.parseInt(s);
+            int f = x%10;
+            if (l==4){
+                ans = 10*f;
+            }
+            else if (l==3){
+                ans = 10*(f-1)+6;
+            }
+            else if (l==2){
+                ans = 10*(f-1)+3;
+            }
+            else if (l==1){
+                ans = 10*(f-1)+1;
+            }
+            System.out.println(ans);
+        }
+    }
+}

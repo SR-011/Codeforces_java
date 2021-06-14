@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class cd {
+    public static void main(String[] args) {
+        long n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        int cm=0,cc=0;
+        for (int i=0;i<n;i++) {
+            int M = sc.nextInt();
+            int C = sc.nextInt();
+            if(M>C){
+                cm++;
+            }
+            else if(M<C){
+                cc++;
+            }
+            }
+            if(cm>cc){
+                System.out.print("Mishka");
+            }
+            else if (cc>cm){
+                System.out.print("Chris");
+            }else System.out.print("Friendship is magic!^^");
+    }
+}
